@@ -12,29 +12,21 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:textViewStyle">@style/Theme.SRS7Style.TextView</item>
         <item name="materialButtonStyle">@style/Theme.SRS7Style.Button</item>
 
     </style>
-
 
     <style name="Theme.SRS7Style.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">16sp</item>
     </style>
 
-
-
     <style name="Theme.SRS7Style.TextView" parent="Widget.MaterialComponents.TextView">
         <item name="android:textSize">20sp</item>
-    </style>
-
-    <style name="Theme.SRS7Style.TextView.h1" parent="Widget.MaterialComponents.TextView">
-        <item name="android:textSize">28sp</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="Theme.SRS7Style.ImageView">
         <item name="android:background">@color/black</item>
     </style>
+
 </resources>
