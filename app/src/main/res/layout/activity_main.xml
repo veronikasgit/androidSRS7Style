@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Главная"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@id/contacts_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/contacts_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Контакты"
+        app:layout_constraintEnd_toStartOf="@+id/about_us_button"
+        app:layout_constraintStart_toEndOf="@+id/main_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/about_us_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="О нас"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contacts_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/picture_view"
+        style="@style/Theme.SRS7Style.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contacts_button" />
+
+    <TextView
+        android:id="@+id/what_is_lorem_ipsum_textview"
+        style="@style/Theme.SRS7Style.TextView.h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/lorem_ipsum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picture_view" />
+
+    <TextView
+        android:id="@+id/lorem_ipsum_it_is_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/lorem_ipsum2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/what_is_lorem_ipsum_textview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
